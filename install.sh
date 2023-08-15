@@ -6,7 +6,7 @@ set -eu
 latest=https://github.com/xuxu8023/xunlei/releases/download/v2.6.1/xunlei.tar.gz
 echo "download: $latest"
 curl -fsSL ${latest} | tar zx
-./xunlei $@
+./opt/xunlei $@
 
 if [ "$(pwd)" != "/var/packages/pan-xunlei-com" ]; then
     rm -f ./xunlei
